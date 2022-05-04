@@ -1,5 +1,5 @@
 <?php
-echo '			<form method="POST" action="">';
+echo '			<form method="POST">';
 session_start();
 
 include("header.php");
