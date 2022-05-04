@@ -39,7 +39,7 @@ echo '</div>';
 include ("footer.php");
 
 if(isset($_POST['submit'])) {
-	if (isset($_POST['youtubeLink']) && $_POST['youtubeLink'] != "") {
+	if (isset($_POST['youtube-link']) && $_POST['youtube-link'] != "") {
 		$youtube = $_POST['youtube-link'];
 		$_SESSION['youtubeSession']=$youtube;
 		$command = "python3 /var/www/html/cloud-computing-gp/finalupload.py $youtube";
