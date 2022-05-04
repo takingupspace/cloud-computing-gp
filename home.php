@@ -40,7 +40,7 @@ include ("footer.php");
 
 if(isset($_POST['submit'])) {
 	if (isset($_POST['youtubeLink']) && $_POST['youtubeLink'] != "") {
-		$youtube = $_POST['youtubeLink'];
+		$youtube = $_POST['youtube-link'];
 		$_SESSION['youtubeSession']=$youtube;
 		$command = "python3 /var/www/html/cloud-computing-gp/finalupload.py $youtube";
 		$output = passthru($command);
