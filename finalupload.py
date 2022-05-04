@@ -2,8 +2,6 @@ from pytube import YouTube
 import sys
 import boto3
 import os
-import requests
-import urllib3
 
 def DownloadYT(url):
     temp = url[32:]
@@ -21,10 +19,6 @@ def DownloadYT(url):
             Params={'Bucket': 'cloud-computing-gp', 'Key' : temp},
             ExpiresIn=3600)
     url = str(url)
-    userdata = { "video_link" : 'test' }
-    urllib3.disable_warnings()
-    resp = requests.post('https://ec2-18-208-211-38.compute-1.amazonaws.com/pythoncloud/upload.php', params=userdata, verify=False)
     print(url)
-    return resp
 
 DownloadYT(sys.argv[1])
