@@ -9,6 +9,7 @@ echo '		<p class="col-md-10 fs-4">To start, paste a url in the correct input box
 echo '		<a onclick="updateContent(\'about\')"><button class="btn btn-outline-primary btn-lg" type="button">More about us!</button></a>';
 echo '	</div>';
 echo '</div>';
+echo '			<form method="POST" action="">';
 echo '<div id="downloaders-block" class="row align-items-md-stretch">';
 echo '	<div class="col-md-12">';
 echo '		<div class="h-100 p-5 text-white bg-gradient rounded-3">';
@@ -22,6 +23,7 @@ echo '				<button class="btn btn-outline-light" type="submit" name="utubesubmit"
 echo '			</div>';
 echo '		</div>';
 echo '	</div>';
+echo '			</form>';
 //echo '<div class="col-md-6">';
 //echo '<div class="h-100 p-5 text-white bg-gradient rounded-3">';
 //echo '<h2>Tiktok</h2>';
