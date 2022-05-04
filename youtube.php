@@ -14,7 +14,7 @@ echo '<div class="col-md-12">';
 echo '    <div class="h-100 p-5 text-white bg-gradient rounded-3">';
 echo '        <h2>Downloading YouTube Video...</h2>';
 echo '        <div class="container p-4">';
-echo '            <h6 id="videoURL" class="mb-2 text-light">'.$_SESSION['youtubeSession'].'</h6>';
+//echo '            <h6 id="videoURL" class="mb-2 text-light">'.$_SESSION['youtubeSession'].'</h6>';
 echo '            <div class="progress" style="height: 25px;">';
 echo '                <div id="youtube-progress" class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>';
 echo '            </div>';
