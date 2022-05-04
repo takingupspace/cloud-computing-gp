@@ -18,7 +18,7 @@ echo '			<div class="input-group mb-3">';
 echo '				<input id="youtube-link" name="youtube-link" type="text" class="form-control" placeholder="https://www.youtube.com/watch?v=dQw4w9WgXcQ" aria-label="youtube url" aria-describedby="youtube-desc">';
 echo '			</div>';
 echo '			<div class="container d-flex justify-content-end" style="padding: 0 !important">';
-echo '				<a <!--onclick="updateContent(\'youtube\')"-->><button class="btn btn-outline-light" type="submit" name="submit" id="submit">Download</button></a>';
+echo '				<button class="btn btn-outline-light" type="submit" name="submit" id="submit">Download</button>';
 echo '			</div>';
 echo '		</div>';
 echo '	</div>';
