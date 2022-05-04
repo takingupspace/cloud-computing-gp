@@ -1,5 +1,7 @@
 <?php
+echo '			<form method="POST" action="">';
 session_start();
+
 include("header.php");
 
 echo '<div class="p-5 mb-4 bg-light rounded-3">';
@@ -9,7 +11,6 @@ echo '		<p class="col-md-10 fs-4">To start, paste a url in the correct input box
 echo '		<a onclick="updateContent(\'about\')"><button class="btn btn-outline-primary btn-lg" type="button">More about us!</button></a>';
 echo '	</div>';
 echo '</div>';
-echo '			<form method="POST" action="">';
 echo '<div id="downloaders-block" class="row align-items-md-stretch">';
 echo '	<div class="col-md-12">';
 echo '		<div class="h-100 p-5 text-white bg-gradient rounded-3">';
@@ -23,7 +24,6 @@ echo '				<a onclick="updateContent(\'youtube\')"><button class="btn btn-outline
 echo '			</div>';
 echo '		</div>';
 echo '	</div>';
-echo '			</form>';
 //echo '<div class="col-md-6">';
 //echo '<div class="h-100 p-5 text-white bg-gradient rounded-3">';
 //echo '<h2>Tiktok</h2>';
@@ -40,10 +40,12 @@ echo '</div>';
 
 include ("footer.php");
 
+echo '			</form>';
+
 if(isset($_POST['utubesubmit'])) {
 	//if (isset($_POST['youtube-link']) && $_POST['youtube-link'] != "") {
 		$youtube = $_POST['youtube-link'];
-		$_SESSION['youtubeSession']=$youtube;
+		//$_SESSION['youtubeSession']=$youtube;
 		$command = "python3 /var/www/html/pythoncloud/finalupload.py $youtube";
 		$output = passthru($command);
 		echo "youtube = $youtube";
