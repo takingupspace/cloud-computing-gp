@@ -44,7 +44,7 @@ if(isset($_POST['utubesubmit'])) {
 	//if (isset($_POST['youtube-link']) && $_POST['youtube-link'] != "") {
 		$youtube = $_POST['youtube-link'];
 		$_SESSION['youtubeSession']=$youtube;
-		$command = "python3 /var/www/html/cloud-computing-gp/finalupload.py $youtube";
+		$command = "python3 /var/www/html/pythoncloud/finalupload.py $youtube";
 		$output = passthru($command);
 		echo "youtube = $youtube";
 	//}
