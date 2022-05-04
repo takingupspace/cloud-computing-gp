@@ -43,7 +43,7 @@ function move(progressBarURL) {
 function updateContent(page) {
     $.ajax({
         type: 'post',
-        url: 'https://ec2-3-86-206-65.compute-1.amazonaws.com/downloader/' + page + '.php', 
+        url: 'https://ec2-18-208-211-38.compute-1.amazonaws.com/cloud-computing-gp/' + page + '.php',
         success: function(data){
 			switch (page){
                 case "home":
