@@ -18,7 +18,7 @@ echo '			<div class="input-group mb-3">';
 echo '				<input id="youtube-link" name="youtube-link" type="text" class="form-control" placeholder="https://www.youtube.com/watch?v=dQw4w9WgXcQ" aria-label="youtube url" aria-describedby="youtube-desc">';
 echo '			</div>';
 echo '			<div class="container d-flex justify-content-end" style="padding: 0 !important">';
-echo '				<button class="btn btn-outline-light" type="submit" name="submit" id="submit">Download</button>';
+echo '				<button class="btn btn-outline-light" type="submit" name="utubesubmit" id="submit">Download</button>';
 echo '			</div>';
 echo '		</div>';
 echo '	</div>';
@@ -38,12 +38,12 @@ echo '</div>';
 
 include ("footer.php");
 
-if(isset($_POST['submit'])) {
-	if (isset($_POST['youtube-link']) && $_POST['youtube-link'] != "") {
+if(isset($_POST['utubesubmit'])) {
+	//if (isset($_POST['youtube-link']) && $_POST['youtube-link'] != "") {
 		$youtube = $_POST['youtube-link'];
 		$_SESSION['youtubeSession']=$youtube;
 		$command = "python3 /var/www/html/cloud-computing-gp/finalupload.py $youtube";
 		$output = passthru($command);
-	}
+	//}
 }
 ?>
